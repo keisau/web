@@ -7,7 +7,7 @@ import reducer from "./reducers"
 
 import NotFound from "./containers/NotFound"
 import RootContainer from "./containers/RootContainer"
-import HomeContainer from "./containers/Home"
+import { HomeContainer, HomeIndexContainer } from "./containers/Home"
 import IndexContainer from "./containers/IndexContainer"
 import history from "./history"
 
@@ -38,7 +38,9 @@ const App = React.createClass ({
 					<ReduxRouter history={history} createElement={this.createElement} >
 						<Route path="/" component={RootContainer} onEnter={this.initialize}>
 							<IndexRoute component={IndexContainer} />
-							<Route path="home" component={HomeContainer} />
+							<Route path="home" component={HomeContainer} >
+								<IndexRoute component={HomeIndexContainer} />
+							</Route>
 							<Route path="*" component={NotFound} />
 						</Route>
 					</ReduxRouter>

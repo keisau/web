@@ -1,14 +1,11 @@
 import React, { Component, PropTypes } from "react"
 import { connect } from "react-redux"
 
-const HomeContainer = React.createClass ({
-	componentDidMount () {
-		this.props.setLoaded (true)
-	},
+const Home = React.createClass ({
 	render () {
 		console.log ("render (home container): ", this.props)
 		return (
-			<div id="mainPageContainer">
+			<div id="homeContainer">
 				{this.props.children}
 			</div>
 		)
@@ -20,4 +17,4 @@ const mapStateToProps = (state) => {
 	return state
 }
 
-export default connect (mapStateToProps) (HomeContainer)
+export default connect (mapStateToProps) (Home)

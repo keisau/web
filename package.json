@@ -4,7 +4,8 @@
   "description": "PierreSaux",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p",
+    "start": "node ./js/app.js",
+    "build": "NODE_ENV=production webpack -p",
     "test": "webpack-dev-server --port 8090 --hot --inline"
   },
   "repository": {
@@ -17,6 +18,13 @@
     "url": "https://github.com/pierresaux/web/issues"
   },
   "homepage": "https://github.com/pierresaux/web#readme",
+	"dependencies": {
+		"body-parser": "^1.14.1",
+		"compression": "^1.6.0",
+		"connect-timeout": "^1.7.0",
+		"express": "^4.13.3",
+		"moment-timezone": "^0.4.1"
+	},
   "devDependencies": {
     "babel-core": "^5.8.29",
     "babel-loader": "^5.3.2",

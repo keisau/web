@@ -2,7 +2,7 @@ var webpack = require ("webpack")
 var path = require ("path")
 
 var jsPath = path.resolve (__dirname, "js")
-var publicPath = path.resolve (__dirname, "")
+var publicPath = path.resolve (__dirname, "build")
 
 module.exports = {
 	entry: [
@@ -13,7 +13,7 @@ module.exports = {
 		library: "ReactRouter",
 		libraryTarget: "umd",
 		path: publicPath,
-		publicPath: "/web"
+		publicPath: "/"
 	},
 	module: {
 		loaders: [
@@ -31,7 +31,7 @@ module.exports = {
 		]
 	},
 	devServer: {
-		contentBase: "./",
+		contentBase: "./build",
 		stats: {
 			colors: true
 		},
