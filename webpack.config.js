@@ -13,7 +13,7 @@ module.exports = {
 		library: "ReactRouter",
 		libraryTarget: "umd",
 		path: publicPath,
-		publicPath: "/"
+		publicPath: "/web"
 	},
 	module: {
 		loaders: [
