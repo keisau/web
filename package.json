@@ -1,11 +1,11 @@
 {
   "name": "web",
-  "version": "v0.1.0alpha1",
+  "version": "v0.1.0alpha2",
   "description": "PierreSaux",
   "main": "index.js",
   "scripts": {
     "start": "node ./js/app.js",
-		"postinstall": "NODE_ENV=production node $(find . -name webpack.js | grep bin | head -1) -p",
+		"postinstall": "NODE_ENV=production node node_modules/webpack/bin/webpack.js -p",
     "build": "NODE_ENV=production webpack -p",
     "test": "webpack-dev-server --port 8090 --hot --inline"
   },
