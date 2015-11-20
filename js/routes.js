@@ -17,7 +17,6 @@ import { store } from "./store"
 
 const App = React.createClass ({
 	createElement (Component, props) {
-		//console.log ("createElement: ", props, store.getState ())
 		return (
 			<Component {...props}
 				store={store}
