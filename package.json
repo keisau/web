@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./js/app.js",
+		"postinstall": "npm run build",
     "build": "NODE_ENV=production webpack -p",
     "test": "webpack-dev-server --port 8090 --hot --inline"
   },
