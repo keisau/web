@@ -1,8 +1,9 @@
 var webpack = require ("webpack")
 var path = require ("path")
 
-var jsPath = path.resolve (__dirname, "js")
-var publicPath = path.resolve (__dirname, "build")
+var clientPath = path.resolve (__dirname, "client")
+var jsPath = path.resolve (clientPath, "js")
+var buildPath = path.resolve (clientPath, "build")
 
 module.exports = {
 	entry: [
@@ -12,13 +13,13 @@ module.exports = {
 		filename: "bundle.js",
 		library: "ReactRouter",
 		libraryTarget: "umd",
-		path: publicPath,
+		path: buildPath,
 		publicPath: "/"
 	},
 	module: {
 		loaders: [
 			{
-				test: /\.js?$/,
+				test: /\.js$/,
 				exclude: /node_modules/,
 				loader: "babel-loader"
 			},
@@ -31,11 +32,14 @@ module.exports = {
 		]
 	},
 	devServer: {
-		contentBase: "./build",
+		contentBase: buildPath,
 		stats: {
 			colors: true
 		},
+		hot: true,
+		inline: true,
 		proxy: false,
+		port: 8090,
 		historyApiFallback: true
 	},
 	plugins: [

@@ -1,7 +1,8 @@
 module.exports = function (grunt) {
-	var env = process.env.ENV || "dev"
-	var expressTask = "express:" + env
-	var path = require ("path")
+	const env = process.env.ENV || "dev"
+	const expressTask = "express:" + env
+	const path = require ("path")
+	const scriptPath = path.resolve (__dirname, "app.js")
 
 	console.log ("environment: %s", process.env.ENV)
 
@@ -17,38 +18,30 @@ module.exports = function (grunt) {
 			},
 			dev: {
 				options: {
-					script: path.resolve (__dirname, "js", "app.js")
+					script: scriptPath
 				}
 			},
 			staging: {
 				options: {
-					script: path.resolve (__dirname, "js", "app.js")
+					script: scriptPath
 				}
 			},
 			production: {
 				options: {
-					script: path.resolve (__dirname, "js", "app.js")
+					script: scriptPath
 				}
 			}
 		},
 		watch: {
-			options: {
-				spawn: false
-			},
 			scripts: {
 				files: [
-					"js/*.js",
-					"js/db/*.js",
-					"js/configs/*.js",
-					"js/configs/*/*.js",
-					"js/lib/*.js",
-					"js/lib/*/*.js",
-					"js/lib/*/*/*.js",
-					"js/components/*/*.js",
+					"app.js",
+					"server/*.js",
+					"server/logger/*.js",
 					"Gruntfile.js"
 				],
 				tasks: [
-					expressTask
+					expressTask,
 				],
 				options: {
 					livereload: true

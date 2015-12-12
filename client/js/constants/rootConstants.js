@@ -1,4 +1,4 @@
 import keyMirror from "fbjs/lib/keyMirror"
 export default keyMirror ({
-	SET_LOADED: null
+	ROOT_SET_LOADED: null
 })
