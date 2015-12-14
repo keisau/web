@@ -9,10 +9,12 @@ window.onpageshow = event => {
 	}
 }
 
+/*
 if (process.env.NODE_ENV === "production") {
 	console.log = (...args) => args
 	window.console = console
 }
+*/
 
 import { render } from "react-dom"
 import { Provider } from "react-redux"
