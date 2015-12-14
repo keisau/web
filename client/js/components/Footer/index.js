@@ -3,6 +3,7 @@ import { Grid, Row, Col } from "react-bootstrap"
 import FacebookLogo from "../FacebookLogo"
 import GithubLogo from "../GithubLogo"
 import WhatsappLogo from "../WhatsappLogo"
+import EmailLogo from "../EmailLogo"
 
 export default class Footer extends Component {
 	render () {
@@ -24,6 +25,7 @@ export default class Footer extends Component {
 						<Col className="left" md={12}>
 							<FacebookLogo />
 							<GithubLogo />
+							<EmailLogo />
 							<WhatsappLogo />
 						</Col>
 					</Row>
