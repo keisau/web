@@ -3,11 +3,19 @@
  */
 @import "~normalize.css/normalize.css";
 @import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/scss/font-awesome.scss";
 
 /**
  * our styles
  */
- // Mixin
+// font weight
+$normalFontWeight: 200;
+$labelFontWeight: 400;
+
+// font color
+$normalFontColor: rgb(51, 51, 51);
+
+// Mixin
 %clearfix {
 	&:before,
 	&:after {

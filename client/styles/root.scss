@@ -1,4 +1,18 @@
 #rootContainer {
+	a, a:hover, a:visited {
+		color: $normalFontColor;
+		text-decoration: none;
+	}
+
+	.logo {
+		a, a:hover, a:visited {
+			text-decoration: none;
+		}
+		padding-right: 8px;
+		color: rgb(128, 128, 128);
+		font-size: 14px;
+	}
+
 	/* spinning loader */
 	@import "./spinningLoader.scss";
 
@@ -7,4 +21,7 @@
 
 	/* index page */
 	@import "./indexPage/index.scss";
+
+	/* footer */
+	@import "./footer.scss";
 }

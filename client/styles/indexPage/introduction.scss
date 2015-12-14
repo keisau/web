@@ -1,10 +1,14 @@
 #introduction {
 	position: relative;
 	word-wrap: break-word;
-	font-weight: $labelFontWeight;
-	color: #777;
-	padding-top: 2px;
-	padding-bottom: 64px;
+	font-weight: $normalFontWeight;
+	font-family: sans-serif;
+	color: rgb(224, 224, 224);
+	text-shadow: 2px 2px rgb(32, 32, 32);
+	padding-top: 64px;
+	padding-bottom: 76px;
+	background: url("../../images/intro/bg.jpg") no-repeat center;
+	background-size: 100%;
 	#mainGrid {
 		margin-top: 64px;
 		#paragraph1 {

@@ -4,6 +4,7 @@ import React, { PropTypes, Component } from "react"
 import { connect } from "react-redux"
 import SpinningLoaderContainer from "./SpinningLoaderContainer"
 import NavBar from "../components/NavBar"
+import Footer from "../components/Footer"
 
 class Root extends Component {
 	render () {
@@ -13,6 +14,7 @@ class Root extends Component {
 				<SpinningLoaderContainer />
 				<NavBar />
 				{this.props.children}
+				<Footer />
 			</div>
 		)
 	}
