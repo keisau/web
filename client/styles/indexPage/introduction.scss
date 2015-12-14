@@ -3,19 +3,12 @@
 	word-wrap: break-word;
 	font-weight: $normalFontWeight;
 	font-family: sans-serif;
+	font-size: 16px;
 	color: rgb(224, 224, 224);
 	text-shadow: 2px 2px rgb(32, 32, 32);
-	padding-top: 64px;
-	padding-bottom: 76px;
+	padding: 128px 48px 76px 48px;
 	background: url("../../images/intro/bg.jpg") no-repeat center;
 	background-size: 100%;
-	#mainGrid {
-		margin-top: 64px;
-		#paragraph1 {
-			font-size: 18px;
-		}
-		#paragraph2 {
-			font-size: 18px;
-		}
-	}
+	height: auto;
+	width: 100%;
 }
