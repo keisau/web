@@ -1,0 +1,10 @@
+#indexContainer {
+	$normalFontWeight: 200;
+	$labelFontWeight: 400;
+	margin-top: 64px;
+	font-weight: $normalFontWeight;
+	#indexContent {
+		@import "./introduction.scss";
+		@import "./skills.scss";
+	}
+}

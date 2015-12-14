@@ -1,5 +1,5 @@
+require ("file?name=[name].[ext]!../index.html")
 require ("babel-polyfill")
-require("file?name=[name].[ext]!../index.html")
 import React from "react"
 
 window.onunload = () => {}

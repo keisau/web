@@ -1,7 +1,7 @@
-import React from "react"
+import React, { Component, PropTypes } from "react"
 import { connect } from "react-redux"
 
-const NotFound = React.createClass ({
+class NotFound extends Component {
 	render () {
 		return (
 			<div id="notFoundContainer">
@@ -9,6 +9,6 @@ const NotFound = React.createClass ({
 			</div>
 		)
 	}
-})
+}
 
 export const NotFoundContainer = connect (state => state) (NotFound)

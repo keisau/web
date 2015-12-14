@@ -1,0 +1,17 @@
+#introduction {
+	position: relative;
+	word-wrap: break-word;
+	font-weight: $labelFontWeight;
+	color: #777;
+	padding-top: 2px;
+	padding-bottom: 64px;
+	#mainGrid {
+		margin-top: 64px;
+		#paragraph1 {
+			font-size: 18px;
+		}
+		#paragraph2 {
+			font-size: 18px;
+		}
+	}
+}

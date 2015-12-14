@@ -1,0 +1,38 @@
+#skills {
+	position: relative;
+	word-wrap: break-word;
+	color: #777;
+	background-color: #eee;
+	width: 100%;
+	#mainGrid {
+		#mainTitle {
+			padding-top: 48px;
+			font-size: 32px;
+			text-align: center;
+		}
+		.white {
+			background-color: #fff;
+		}
+		#paragraph1 {
+			padding: 64px 16px;
+			#title {
+				font-size: 18px;
+				padding: 4px;
+			}
+		}
+		#paragraph2 {
+			padding: 64px 16px;
+			#title {
+				font-size: 18px;
+				padding: 4px;
+			}
+		}
+		#paragraph3 {
+			padding: 64px 16px;
+			#title {
+				font-size: 18px;
+				padding: 4px;
+			}
+		}
+	}
+}
